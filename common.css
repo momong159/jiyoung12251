@@ -13,11 +13,20 @@ a { text-decoration: none; }
 #loginList li { float: left; margin-left: 10px; }
 #loginList li a { display: block; color: #fff; font-size: 12px; }
 /* 네비 */
-#gnbWrap { width: 100%; height: 50px; background: #000; opacity: 0.5; }
+#gnbWrap { width: 100%; height: 50px; background: #000; opacity: 0.5; position: relative; }
 #gnb { width: 1000px; height: 50px; margin: 0 auto; }
-#gnb > li { float: left; line-height: 48px; text-align: center; }
-#gnb > li > a { display: block; line-height: 48px; width: 150px; color: #fff; }
-#gnb > li > a:hover { border-bottom: 2px solid #fff; font-size: 20px;}
-.snb { width: 150px; height: 200px; margin-top: 2px; background: #000; }
+#gnb > li { float: left; line-height: 50px; text-align: center; }
+#gnb > li > a { display: block; height: 48px; width: 150px; color: #fff; margin-bottom: 2px; }
+#gnb > li > a:hover { border-bottom: 2px solid #fff; margin-bottom: 0; }
+.snb { width: 150px; height: 200px; background: #000; position: absolute; opacity: 0; }
 .snb li > a { display: block; width: 150px; line-height: 45px; color: #fff; }
-.snb li > a:hover { color: rgb(255, 255, 255); }
+.snb li > a:hover { color: rgb(168, 124, 124); text-decoration: underline; }
+#start { position: absolute; top: 0; right: 0;  width: 200px; height: 50px; }
+/* 슬라이더 */
+#sliderWrap { width: 1000px; height: 500px; margin: 0 auto; overflow: hidden; background: rgb(151, 81, 152); }
+#sliderList { width: 300%; height: 500px; }
+.slider { width: 33.3333%; height: 500px; float: left;
+          background: no-repeat center / cover; }
+.slider1 { background-image: url(images/event1.png); }
+.slider2 { background-image: url(images/event2.png); }
+.slider3 { background-image: url(images/event3.png); }
