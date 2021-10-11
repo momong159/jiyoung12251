@@ -13,3 +13,11 @@ a { text-decoration: none; }
 #loginList li { float: left; margin-left: 10px; }
 #loginList li a { display: block; color: #fff; font-size: 12px; }
 /* 네비 */
+#gnbWrap { width: 100%; height: 50px; background: #000; opacity: 0.5; }
+#gnb { width: 1000px; height: 50px; margin: 0 auto; }
+#gnb > li { float: left; line-height: 48px; text-align: center; }
+#gnb > li > a { display: block; line-height: 48px; width: 150px; color: #fff; }
+#gnb > li > a:hover { border-bottom: 2px solid #fff; font-size: 20px;}
+.snb { width: 150px; height: 200px; margin-top: 2px; background: #000; }
+.snb li > a { display: block; width: 150px; line-height: 45px; color: #fff; }
+.snb li > a:hover { color: rgb(255, 255, 255); }
