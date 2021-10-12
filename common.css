@@ -7,26 +7,49 @@ a { text-decoration: none; }
 .hidden { position: absolute; left: -9999px; }
 /* 헤더 */
 #header { width: 100%; height: 100px; }
-#headerWrap { width: 1000px; height: 100px; margin: 0 auto; }
+#headerWrap { width: 1200px; height: 100px; margin: 0 auto; }
 #headerWrap a { display: block; width: 170px; height: 100px; background-image: url(images/logo.png); margin: 0 auto; }
 #login { position: absolute; top: 10px; right: 50px; }
 #loginList li { float: left; margin-left: 10px; }
 #loginList li a { display: block; color: #fff; font-size: 12px; }
 /* 네비 */
 #gnbWrap { width: 100%; height: 50px; background: #000; opacity: 0.5; position: relative; }
-#gnb { width: 1000px; height: 50px; margin: 0 auto; }
+#gnb { width: 1200px; height: 50px; margin: 0 auto; }
 #gnb > li { float: left; line-height: 50px; text-align: center; }
-#gnb > li > a { display: block; height: 48px; width: 150px; color: #fff; margin-bottom: 2px; }
+#gnb > li > a { display: block; height: 48px; width: 200px; color: #fff; margin-bottom: 2px; }
 #gnb > li > a:hover { border-bottom: 2px solid #fff; margin-bottom: 0; }
-.snb { width: 150px; height: 200px; background: #000; position: absolute; opacity: 0; }
-.snb li > a { display: block; width: 150px; line-height: 45px; color: #fff; }
-.snb li > a:hover { color: rgb(168, 124, 124); text-decoration: underline; }
+.snb { width: 200px; height: 200px; background: #000; position: absolute; opacity: 0; }
+.snb li > a { display: block; width: 200px; line-height: 45px; color: #fff; position: relative; }
+.snb li > a:hover { text-decoration: underline; }
 #start { position: absolute; top: 0; right: 0;  width: 200px; height: 50px; }
 /* 슬라이더 */
-#sliderWrap { width: 1000px; height: 500px; margin: 0 auto; overflow: hidden; background: rgb(151, 81, 152); }
+#slider { width: 1200px; height: 500px; margin: 0 auto; overflow: hidden; }
 #sliderList { width: 300%; height: 500px; }
 .slider { width: 33.3333%; height: 500px; float: left;
           background: no-repeat center / cover; }
 .slider1 { background-image: url(images/event1.png); }
 .slider2 { background-image: url(images/event2.png); }
 .slider3 { background-image: url(images/event3.png); }
+#sliderWrap > a { width: 30px; height: 30px; background: #000; opacity: 0.5; color: #fff; }
+/* 업데이트 */
+#updateWrap { width: 1000px; height: 300px; margin: 0 auto; padding: 80px 100px; display: grid;
+              grid-template-columns: auto auto; }
+.update { background: no-repeat center / cover; }
+#update h3 { margin: 0 0 10px 60px; color: #fff; }
+#guide h3 { margin: 0 0 10px 0; color: #fff; }
+#update a { display: block; width: 450px; height: 300px; margin-left: 50px; background-image: url(images/update.jpg); }
+#guide a { display: block; width: 450px; height: 300px; background-image: url(images/guide.jpg); }
+/* 추천영상 */
+#playWrap { width: 100%; height: 700px; background: #cfcfcf; }
+#play { display: grid; grid-template-columns: auto auto auto auto; gap: 50px 0;
+        width: 1060px; height: 600px;
+        margin: 0 auto; padding: 100px 0 0 70px; position: relative;
+      }
+#play h3 { position: absolute; top: 20px; left: 520px; }
+#play a { display: block; width: 220px; height: 160px; background: url(images/play.png) no-repeat center / cover;
+          border-radius: 20%;}
+/* 푸터 */
+#footer { width: 100%; height: 200px; }
+#footerWrap { width: 1200px; height: 200px; margin: 0 auto; position: relative; }
+#footerWrap div { width: 700px; height: 140px; text-align: center; padding-top: 60px; }
+#footerWrap a { display: block; width: 300px; height: 60px; position: absolute; top: 35%; right: 50px; background: url(images/footer.png) no-repeat center / cover; }
